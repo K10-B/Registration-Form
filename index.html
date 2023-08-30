@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/ccs.png">
+    <script src="https://kit.fontawesome.com/ad8b7a97e7.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+
+</head>
+<body>
+  <div>
+    <h3>Registration Form</h3>
+  </div>
+
+    <form action="index.html" method="post">
+        <table border="5px">
+            <div>
+            <tr>
+              <td>
+                <label>First Name: </label>
+              </td>
+                <td>
+                  <input type="text"
+                          name="firstname"
+                          id="firstname"
+                          placeholder="Enter your First Name"
+                          required>
+                  <i class="fa-regular fa-user"></i>
+                </td><br>
+            </tr>
+            </div>
+            <div>
+              <tr>
+                <td><label>Middle Name: </label></td><br>
+                <td>
+                  <input type="text"
+                          name="middlename"
+                          id="middlename"
+                          placeholder="Enter your Middle Name">
+                  <i class="fa-regular fa-user"></i>
+                </td><br>
+              </tr>
+            </div>
+            <div>
+              <tr>
+                <td>
+                  <label>Last Name: </label>
+                </td><br>
+                <td>
+                  <input type="text"
+                        name="lastname"
+                        id="lastname"
+                        placeholder="Enter your Last Name">
+                    <i class="fa-solid fa-user"></i>
+                </td><br><br>
+              </tr>
+            </div>
+            <div>
+              <tr>
+                <td>
+                  <label>Email: </label>
+                </td>
+                <td>
+                  <input type="email"
+                          name="email"
+                          id="email">
+                  <i class="fa-regular fa-envelope"></i>
+                </td><br>
+              </tr>
+            </div>
+            <div>
+              <tr>
+                <td>
+                  <label>Contact Number: </label>
+                </td>
+                <td>
+                  <input type="number"
+                          name="contact"
+                          id="contact">
+                  <i class="fa-regular fa-address-book"></i>
+                </td>
+              </tr>
+            </div>
+            <div>
+              <tr>
+                <td>
+                  <label>Suffix: </label>
+                </td>
+                <td>
+                  <select name="suffix" id="suffix">
+                    <option value="none">None</option>
+                    <option value="sr">Senior</option>
+                    <option value="jr">Junior</option>
+                  </select>
+                  <i class="fa-solid fa-s"></i>
+                </td>
+              </tr>
+            </div>
+            <div>
+              <tr>
+                <td>
+                  <label>Permanent Address: </label>
+                </td>
+                <td>
+                  <textarea name="permanentAddress"
+                            id="permanentAddress"
+                            cols="20"
+                            rows="2">
+                    </textarea>
+                    <i class="fa-solid fa-house"></i>
+                </td>
+              </tr>
+            </div>
+        </table><br>
+        <button type="button" onclick="displayInput()">Register</button>
+    </form>
+    <div id="output"></div>
+</body>
+</html>
